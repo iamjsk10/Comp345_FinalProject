@@ -1,0 +1,25 @@
+Hero
+5
+30
+13
+2
+5
+12
+17
+11
+Chainmail Armor
+Belt of Agility
+Leather Boots
+Iron Helmet
+Ring of Strength
+Steel Shield
+Battle Axe
+8
+Excalibur
+Battle Axe
+Steel Shield
+Iron Helmet
+Chainmail Armor
+Ring of Strength
+Belt of Agility
+Leather Boots

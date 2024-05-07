@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CharacterEditorClass</class>
+ <widget class="QWidget" name="CharacterEditorClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1130</width>
+    <height>638</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CharacterEditor</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>1081</width>
+     <height>611</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="widget_mainPage">
+    <widget class="QLabel" name="label_title">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>100</y>
+       <width>101</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Character Selection</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_mainPage_newCharacter">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>200</y>
+       <width>101</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>New Character</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_mainPage_exit">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>300</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Exit</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_loadCharacter">
+    <widget class="QLabel" name="label_loadCharacter_title">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>10</y>
+       <width>241</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>load character</string>
+     </property>
+    </widget>
+    <widget class="QListView" name="list_loadCharacter_character">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>70</y>
+       <width>381</width>
+       <height>481</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_loadCharacter_enterGame">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>240</y>
+       <width>121</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Enter Game</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_newCharacter">
+    <widget class="QLineEdit" name="input_newCharacter_name">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>110</y>
+       <width>261</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>80</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Character Name</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_newCharacter_createCharacter">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>150</y>
+       <width>111</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Create Character</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="button_newCharacter_exit">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>150</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Exit</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
