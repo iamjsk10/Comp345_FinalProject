@@ -1,0 +1,4 @@
+Excalibur
+Weapon
+attackBonus
+3

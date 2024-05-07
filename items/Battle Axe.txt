@@ -1,0 +1,4 @@
+Battle Axe
+Weapon
+damageBonus
+2

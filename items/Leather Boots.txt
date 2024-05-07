@@ -1,0 +1,4 @@
+Leather Boots
+Boots
+dexterity
+3

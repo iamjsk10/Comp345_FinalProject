@@ -1,0 +1,4 @@
+Steel Shield
+Shield
+armorClass
+5

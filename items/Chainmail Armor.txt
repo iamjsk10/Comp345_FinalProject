@@ -1,0 +1,4 @@
+Chainmail Armor
+Armor
+armorClass
+5
