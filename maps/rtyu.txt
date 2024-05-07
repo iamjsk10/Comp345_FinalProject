@@ -1,0 +1,16 @@
+rtyu
+10
+12
+0,0,0,0
+E,E,E,E,E,E,E,E,E,E,
+E,E,E,E,E,E,E,E,E,E,
+E,E,E,E,E,E,E,E,E,E,
+W,E,E,E,E,E,E,E,E,E,
+E,E,E,E,E,E,E,E,E,E,
+E,E,E,E,E,E,E,E,E,E,
+T,E,E,E,E,E,E,E,E,E,
+E,E,E,E,E,E,E,E,E,E,
+E,E,E,E,E,E,E,E,E,E,
+E,E,E,E,E,E,E,E,E,E,
+E,E,E,E,E,E,E,E,E,E,
+E,E,E,E,E,E,E,E,E,E,

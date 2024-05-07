@@ -1,0 +1,7 @@
+Map Name
+4
+3
+0,0,0,0
+E,E,E,E,
+E,W,E,E,
+E,E,E,E,

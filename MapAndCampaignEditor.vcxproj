@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+***************************************************************************************************
+ Copyright (C) 2023 The Qt Company Ltd.
+ SPDX-License-Identifier: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+***************************************************************************************************
+-->
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D56B1E71-FF62-4CB5-92CD-517C73F7107A}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.22621.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <ProjectName>COMP345-ProjectGUI</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>6.7.0_msvc2019_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>6.7.0_msvc2019_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Armor.cpp" />
+    <ClCompile Include="Belt.cpp" />
+    <ClCompile Include="Boots.cpp" />
+    <ClCompile Include="CampaignEditor.cpp" />
+    <ClCompile Include="CampaignSelection.cpp" />
+    <ClCompile Include="Character.cpp" />
+    <ClCompile Include="CharacterDetailsWidget.cpp" />
+    <ClCompile Include="CharacterEditor.cpp" />
+    <ClCompile Include="CharacterSaveAndLoad.cpp" />
+    <ClCompile Include="CharacterSelection.cpp" />
+    <ClCompile Include="Dice.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="gameControl.cpp" />
+    <QtMoc Include="GameController.hpp" />
+    <ClCompile Include="gamemapwidget.cpp" />
+    <ClCompile Include="Helmet.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="ItemContainer.cpp" />
+    <ClCompile Include="itemDisplay.cpp" />
+    <ClCompile Include="ItemEditor.cpp" />
+    <ClCompile Include="ItemSaveAndLoad.cpp" />
+    <ClCompile Include="mainmenu.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="MapCell.cpp" />
+    <ClCompile Include="MapEditor.cpp" />
+    <ClCompile Include="Ring.cpp" />
+    <ClCompile Include="Shield.cpp" />
+    <ClCompile Include="Weapon.cpp" />
+    <QtRcc Include="MapAndCampaignEditor.qrc" />
+    <QtUic Include="CampaignEditor.ui" />
+    <QtUic Include="CampaignSelection.ui" />
+    <QtUic Include="CharacterEditor.ui" />
+    <QtUic Include="CharacterSelection.ui" />
+    <QtUic Include="ItemEditor.ui" />
+    <QtUic Include="mainwindow.ui" />
+    <ClCompile Include="Campaign.cpp" />
+    <ClCompile Include="GameMap.cpp" />
+    <ClCompile Include="main.cpp" />
+    <QtUic Include="MapEditor.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Armor.hpp" />
+    <ClInclude Include="Belt.hpp" />
+    <ClInclude Include="Boots.hpp" />
+    <ClInclude Include="Campaign.h" />
+    <QtMoc Include="CampaignSelection.h" />
+    <ClInclude Include="Character.hpp" />
+    <QtMoc Include="CharacterDetailsWidget.hpp" />
+    <QtMoc Include="CharacterEditor.h" />
+    <ClInclude Include="CharacterSaveAndLoad.h" />
+    <QtMoc Include="CharacterSelection.h" />
+    <ClInclude Include="Dice.h" />
+    <ClInclude Include="Enemy.hpp" />
+    <QtMoc Include="itemDisplay.hpp" />
+    <QtMoc Include="ItemEditor.h" />
+    <ClInclude Include="ItemSaveAndLoad.h" />
+    <ClInclude Include="MapObserver.hpp" />
+    <ClInclude Include="Ring.hpp" />
+    <ClInclude Include="Shield.hpp" />
+    <ClInclude Include="Weapon.hpp" />
+    <QtMoc Include="CampaignEditor.h" />
+    <ClInclude Include="GameMap.hpp" />
+    <QtMoc Include="gamemapwidget.h" />
+    <QtMoc Include="mainmenu.h" />
+    <QtMoc Include="mainwindow.h" />
+    <ClInclude Include="Helmet.hpp" />
+    <ClInclude Include="Item.hpp" />
+    <ClInclude Include="ItemContainer.hpp" />
+    <ClInclude Include="MapCell.hpp" />
+    <QtMoc Include="MapEditor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\character.png" />
+    <Image Include="images\chest.png" />
+    <Image Include="images\ground.jpg" />
+    <Image Include="images\wall.jpg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

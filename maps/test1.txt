@@ -1,0 +1,14 @@
+test1
+10
+10
+0,0,0,0
+W,W,W,W,W,W,W,W,E,E,
+E,E,E,E,E,E,E,E,E,E,
+T,E,E,E,E,E,E,E,E,E,
+E,E,E,E,E,E,E,E,E,E,
+E,E,E,E,E,E,E,E,E,E,
+E,E,E,E,E,E,E,E,E,E,
+E,E,E,E,E,E,E,E,E,E,
+E,E,E,E,E,E,E,E,E,E,
+E,E,E,E,E,E,E,E,E,E,
+E,E,E,E,E,E,E,E,E,E,
